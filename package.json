@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/bitsen03/backend-project-44#readme",
   "bin": {
-	"brain-games": "bin/brain-games.js",	
-	"backend-project-44": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "backend-project-44": "bin/brain-games.js"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
