@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { name }from '../src/cli.js'
+import { name } from '../src/cli.js'
 
 console.log('Welcome to the Brain Games!')
  function gameRandom() {
@@ -13,7 +13,7 @@ console.log('Welcome to the Brain Games!')
                 console.log('Correct!');
             }
             else {
-                console.log(`${answer} is wrong answer ;(. Correct answer was 'no'. \nLet's try again, Bill!`);
+                console.log(`${answer} is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${name}!`);
                 return;
             }
 
@@ -25,7 +25,7 @@ console.log('Welcome to the Brain Games!')
                 console.log('Correct!');
             }
             else {
-                console.log(`${answer} is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, Bill!`);
+                console.log(`${answer} is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${name}!`);
                 return;
             }
         }
