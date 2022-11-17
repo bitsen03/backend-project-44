@@ -1,8 +1,5 @@
 import readlineSync from 'readline-sync'; 
 
-import { name } from '../src/cli.js'
-
-
 function gameCalc() {
 
     
@@ -48,4 +45,3 @@ function gameCalc() {
 }
 console.log(`Congratulations, ${name}!`)
 }
-gameCalc()

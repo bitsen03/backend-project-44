@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js'
 
-console.log('Welcome to the Brain Games!')
  function gameRandom() {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
     for (let i = 0; i < 3; i++) {
@@ -33,4 +31,3 @@ console.log('Welcome to the Brain Games!')
     }
     console.log(`Congratulations, ${name}!`)
 }
-gameRandom()
