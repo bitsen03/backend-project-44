@@ -36,9 +36,10 @@ if (j === randomNumber2) {
 
 }
 }
-
+console.log('arr1 ' + arr1)
+console.log('arr2 ' + arr2)
 const filterArr = arr1.filter((x) => arr2.includes(x));
-
+console.log(filterArr)
 for (let k = 0; k < filterArr.length; k++ ) {
     if (filterArr[k] === 'r') {
        
@@ -46,6 +47,7 @@ for (let k = 0; k < filterArr.length; k++ ) {
      
     }
 }
+
 // console.log('arr1 ' + arr1)
 // console.log('arr2 ' + arr2)
 // console.log(filterArr)
