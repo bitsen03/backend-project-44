@@ -4,34 +4,71 @@ console.log('Find the greatest common divisor of given numbers.')
 let result 
 const arr1 = []
 const arr2 = []
-let counter = 0
+let rightAnswer
+
 for (let i = 0; i < 3; i += 1){
-    let randomNumber1 = 20
-    let randomNumber2 = 10
-    // let randomNumber1 = Math.floor(Math.random() * 100)
-    // let randomNumber2 = Math.floor(Math.random() * 100)
+    let randomNumber1 = Math.floor(Math.random() * 100)
+    let randomNumber2 = Math.floor(Math.random() * 100)
+
     console.log(`Question: ${randomNumber1} ${randomNumber2}`)
+
     const answer = readlineSync.question('Your answer: ');
-for (let z = 1; z < 10; z += 1) {
-   
+
+for (let z = 0; z <= randomNumber1; z += 1) {
    
 if (randomNumber1 % z === 0){
-randomNumber1 /= z
+
 arr1.push(z)
-counter += 1 
-}
-}
-for (let j = 1; j < 10; j += 1) {
-    
-   
-if (randomNumber2 % j === 0){
-randomNumber2 /= j
-arr2.push(j)
+if (z === randomNumber1) {
+    arr1.push('r')
 }
 
 }
 }
-console.log(counter)
+for (let j = 0; j <= randomNumber2; j += 1) {
+    
+if (randomNumber2 % j === 0){
+
+arr2.push(j)
+if (j === randomNumber2) {
+    arr2.push('r')
+}
+
+}
+}
+
+const filterArr = arr1.filter((x) => arr2.includes(x));
+
+for (let k = 0; k < filterArr.length; k++ ) {
+    if (filterArr[k] === 'r') {
+       
+        rightAnswer = filterArr[k - 1]
+     
+    }
+}
+// console.log('arr1 ' + arr1)
+// console.log('arr2 ' + arr2)
+// console.log(filterArr)
+// console.log(rightAnswer)
+if (answer === String(rightAnswer)) {
+    console.log('correct!')
+}
+else {
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, Sam!`)
+    return
+}
+
+}
+// const filterArr = arr1.filter((x) => arr2.includes(x));
+// console.log(filterArr)
+// for (let i = 0; i < filterArr.length; i++ ) {
+//     if (filterArr[i] === 'r') {
+//        rightAnswer = filterArr[i - 1]
+     
+//     }
+  
+// }
+
+
 }
 greatestCommonDivisor()
-//100
