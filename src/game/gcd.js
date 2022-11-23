@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync'
  const gcd = () => {
     console.log('Welcome to the Brain Games!');
     const name = readlineSync.question('May I have your name? ');
+    console.log(`Hello, ${name}!`)
 for (let i = 0; i < 3; i++){
     const arr1 = []
     const arr2 = []
