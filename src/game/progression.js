@@ -18,7 +18,7 @@ export default function brainProgression() {
       if (z === randomNumber2) {
         randomNumber3 += rN3;
         rightAnswer = randomNumber3;
-        progression +=  ` ...`;
+        progression +=  ` ..`;
       } else {
         randomNumber3 += rN3;
         progression += ` ${randomNumber3}`;
