@@ -14,11 +14,11 @@ export default function brainProgression() {
     let progression = `${randomNumber3}`;
     let rightAnswer;
 
-    for (let z = 0; z <= 10; z += 1) {
+    for (let z = 0; z <= 8; z += 1) {
       if (z === randomNumber2) {
         randomNumber3 += rN3;
         rightAnswer = randomNumber3;
-        progression += ' ...';
+        progression +=  ` ...`;
       } else {
         randomNumber3 += rN3;
         progression += ` ${randomNumber3}`;
