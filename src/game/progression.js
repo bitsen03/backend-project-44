@@ -6,9 +6,11 @@ export default function brainProgression() {
   console.log(`Hello, ${name}!`);
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
-    const randomNumber2 = Math.floor(Math.random() * 10 - 1);
-    
-    let randomNumber3 = Math.floor(Math.random() * 10 );
+    let randomNumber2 = Math.floor(Math.random() * 10 - 1);
+    if (randomNumber2 === -1){
+        randomNumber2 = 0;
+    }
+    let randomNumber3 = Math.floor(Math.random() * 10 + 1);
 
     const rN3 = randomNumber3;
 
