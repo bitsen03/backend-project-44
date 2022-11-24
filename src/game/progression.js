@@ -7,21 +7,20 @@ export default function brainProgression() {
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
     let randomNumber2 = Math.floor(Math.random() * 10 - 1);
-    if (randomNumber2 === -1){
-        randomNumber2 = 0;
+    if (randomNumber2 === -1) {
+      randomNumber2 = 0;
     }
     let randomNumber3 = Math.floor(Math.random() * 10 + 1);
-
     const rN3 = randomNumber3;
 
-    let progression = ``;
+    let progression = '';
     let rightAnswer;
 
     for (let z = 0; z < 10; z += 1) {
       if (z === randomNumber2) {
         randomNumber3 += rN3;
         rightAnswer = randomNumber3;
-        progression +=  ` ..`;
+        progression += ' ..';
       } else {
         randomNumber3 += rN3;
         progression += ` ${randomNumber3}`;
