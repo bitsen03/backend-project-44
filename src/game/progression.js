@@ -26,7 +26,7 @@ export default function brainProgression() {
         progression += ` ${randomNumber3}`;
       }
     }
-    console.log(`Question: ${progression}`);
+    console.log(`Question:${progression}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === String(rightAnswer)) {
       console.log('correct!');
@@ -38,3 +38,4 @@ export default function brainProgression() {
   console.log(`Congratulations, ${name}!`);
 }
 export { brainProgression };
+// Question: 8 10 12 .. 16 18 20 22 24 26
