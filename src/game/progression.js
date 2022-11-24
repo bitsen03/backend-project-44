@@ -38,4 +38,3 @@ export default function brainProgression() {
   console.log(`Congratulations, ${name}!`);
 }
 export { brainProgression };
-// Question: 8 10 12 .. 16 18 20 22 24 26
