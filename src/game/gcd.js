@@ -8,8 +8,8 @@ export default function gcd() {
   for (let i = 0; i < 3; i += 1) {
     const arr1 = [];
     const arr2 = [];
-    const randomNumber1 = Math.floor(Math.random() * 100);
-    const randomNumber2 = Math.floor(Math.random() * 100);
+    const randomNumber1 = Math.floor(Math.random() * 100 + 1);
+    const randomNumber2 = Math.floor(Math.random() * 100 + 1);
 
     console.log(`Question: ${randomNumber1} ${randomNumber2}`);
 
